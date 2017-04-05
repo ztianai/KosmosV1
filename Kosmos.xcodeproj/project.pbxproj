@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54C1E9584ED005727E4 /* AppDelegate.swift */; };
+		94A3E54F1E9584ED005727E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54E1E9584ED005727E4 /* ViewController.swift */; };
+		94A3E5521E9584ED005727E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5501E9584ED005727E4 /* Main.storyboard */; };
+		94A3E5541E9584ED005727E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5531E9584ED005727E4 /* Assets.xcassets */; };
+		94A3E5571E9584ED005727E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5551E9584ED005727E4 /* LaunchScreen.storyboard */; };
+		94A3E5621E9584ED005727E4 /* KosmosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E5611E9584ED005727E4 /* KosmosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94A3E55E1E9584ED005727E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94A3E5411E9584ED005727E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94A3E5481E9584ED005727E4;
+			remoteInfo = Kosmos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94A3E5491E9584ED005727E4 /* Kosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A3E54C1E9584ED005727E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94A3E54E1E9584ED005727E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94A3E5511E9584ED005727E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94A3E5531E9584ED005727E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94A3E5561E9584ED005727E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94A3E5581E9584ED005727E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A3E55D1E9584ED005727E4 /* KosmosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosmosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A3E5611E9584ED005727E4 /* KosmosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosmosTests.swift; sourceTree = "<group>"; };
+		94A3E5631E9584ED005727E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94A3E5461E9584ED005727E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A3E55A1E9584ED005727E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94A3E5401E9584ED005727E4 = {
+			isa = PBXGroup;
+			children = (
+				94A3E54B1E9584ED005727E4 /* Kosmos */,
+				94A3E5601E9584ED005727E4 /* KosmosTests */,
+				94A3E54A1E9584ED005727E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94A3E54A1E9584ED005727E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E5491E9584ED005727E4 /* Kosmos.app */,
+				94A3E55D1E9584ED005727E4 /* KosmosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94A3E54B1E9584ED005727E4 /* Kosmos */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E54C1E9584ED005727E4 /* AppDelegate.swift */,
+				94A3E54E1E9584ED005727E4 /* ViewController.swift */,
+				94A3E5501E9584ED005727E4 /* Main.storyboard */,
+				94A3E5531E9584ED005727E4 /* Assets.xcassets */,
+				94A3E5551E9584ED005727E4 /* LaunchScreen.storyboard */,
+				94A3E5581E9584ED005727E4 /* Info.plist */,
+			);
+			path = Kosmos;
+			sourceTree = "<group>";
+		};
+		94A3E5601E9584ED005727E4 /* KosmosTests */ = {
+			isa = PBXGroup;
+			children = (
+				94A3E5611E9584ED005727E4 /* KosmosTests.swift */,
+				94A3E5631E9584ED005727E4 /* Info.plist */,
+			);
+			path = KosmosTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94A3E5481E9584ED005727E4 /* Kosmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94A3E5661E9584ED005727E4 /* Build configuration list for PBXNativeTarget "Kosmos" */;
+			buildPhases = (
+				94A3E5451E9584ED005727E4 /* Sources */,
+				94A3E5461E9584ED005727E4 /* Frameworks */,
+				94A3E5471E9584ED005727E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kosmos;
+			productName = Kosmos;
+			productReference = 94A3E5491E9584ED005727E4 /* Kosmos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94A3E55C1E9584ED005727E4 /* KosmosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94A3E5691E9584ED005727E4 /* Build configuration list for PBXNativeTarget "KosmosTests" */;
+			buildPhases = (
+				94A3E5591E9584ED005727E4 /* Sources */,
+				94A3E55A1E9584ED005727E4 /* Frameworks */,
+				94A3E55B1E9584ED005727E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94A3E55F1E9584ED005727E4 /* PBXTargetDependency */,
+			);
+			name = KosmosTests;
+			productName = KosmosTests;
+			productReference = 94A3E55D1E9584ED005727E4 /* KosmosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94A3E5411E9584ED005727E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zhao Tianai";
+				TargetAttributes = {
+					94A3E5481E9584ED005727E4 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					94A3E55C1E9584ED005727E4 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94A3E5481E9584ED005727E4;
+					};
+				};
+			};
+			buildConfigurationList = 94A3E5441E9584ED005727E4 /* Build configuration list for PBXProject "Kosmos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94A3E5401E9584ED005727E4;
+			productRefGroup = 94A3E54A1E9584ED005727E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94A3E5481E9584ED005727E4 /* Kosmos */,
+				94A3E55C1E9584ED005727E4 /* KosmosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94A3E5471E9584ED005727E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3E5571E9584ED005727E4 /* LaunchScreen.storyboard in Resources */,
+				94A3E5541E9584ED005727E4 /* Assets.xcassets in Resources */,
+				94A3E5521E9584ED005727E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A3E55B1E9584ED005727E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94A3E5451E9584ED005727E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3E54F1E9584ED005727E4 /* ViewController.swift in Sources */,
+				94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A3E5591E9584ED005727E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3E5621E9584ED005727E4 /* KosmosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94A3E55F1E9584ED005727E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94A3E5481E9584ED005727E4 /* Kosmos */;
+			targetProxy = 94A3E55E1E9584ED005727E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94A3E5501E9584ED005727E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94A3E5511E9584ED005727E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94A3E5551E9584ED005727E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94A3E5561E9584ED005727E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94A3E5641E9584ED005727E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94A3E5651E9584ED005727E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94A3E5671E9584ED005727E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kosmos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94A3E5681E9584ED005727E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kosmos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		94A3E56A1E9584ED005727E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KosmosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.KosmosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kosmos.app/Kosmos";
+			};
+			name = Debug;
+		};
+		94A3E56B1E9584ED005727E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KosmosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.KosmosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kosmos.app/Kosmos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94A3E5441E9584ED005727E4 /* Build configuration list for PBXProject "Kosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A3E5641E9584ED005727E4 /* Debug */,
+				94A3E5651E9584ED005727E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94A3E5661E9584ED005727E4 /* Build configuration list for PBXNativeTarget "Kosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A3E5671E9584ED005727E4 /* Debug */,
+				94A3E5681E9584ED005727E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94A3E5691E9584ED005727E4 /* Build configuration list for PBXNativeTarget "KosmosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A3E56A1E9584ED005727E4 /* Debug */,
+				94A3E56B1E9584ED005727E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94A3E5411E9584ED005727E4 /* Project object */;
+}
