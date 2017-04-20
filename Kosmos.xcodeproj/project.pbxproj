@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		943471CC1EA81900005323E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 943471CB1EA818FF005323E3 /* GoogleService-Info.plist */; };
 		94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54C1E9584ED005727E4 /* AppDelegate.swift */; };
-		94A3E54F1E9584ED005727E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54E1E9584ED005727E4 /* ViewController.swift */; };
 		94A3E5521E9584ED005727E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5501E9584ED005727E4 /* Main.storyboard */; };
 		94A3E5541E9584ED005727E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5531E9584ED005727E4 /* Assets.xcassets */; };
 		94A3E5571E9584ED005727E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5551E9584ED005727E4 /* LaunchScreen.storyboard */; };
 		94A3E5621E9584ED005727E4 /* KosmosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E5611E9584ED005727E4 /* KosmosTests.swift */; };
+		94A3E56D1E958721005727E4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E56C1E958721005727E4 /* ProductTableViewCell.swift */; };
+		94A3E56F1E958B2E005727E4 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E56E1E958B2E005727E4 /* ProductTableViewController.swift */; };
+		94A3E5711E958B9F005727E4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E5701E958B9F005727E4 /* Product.swift */; };
+		94D19C501E9759AC009B2119 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */; };
+		94D19C521E975B16009B2119 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */; };
+		94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D721571EA01D9600DDFC4D /* TabBarViewController.swift */; };
+		94D7215A1EA069BD00DDFC4D /* AddSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */; };
+		FE0F9628E090759807C9C87A /* Pods_KosmosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D0AE753DC2A0DAD908776 /* Pods_KosmosTests.framework */; };
+		FE40E372E03CFAE6A4CD197E /* Pods_Kosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8218C8F50FD903177E5ADB /* Pods-Kosmos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kosmos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos.release.xcconfig"; sourceTree = "<group>"; };
+		30CBEA7F189D21E90B9B1CF1 /* Pods-KosmosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KosmosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KosmosTests/Pods-KosmosTests.release.xcconfig"; sourceTree = "<group>"; };
+		457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		943471CB1EA818FF005323E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94A3E5491E9584ED005727E4 /* Kosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3E54C1E9584ED005727E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94A3E54E1E9584ED005727E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94A3E5511E9584ED005727E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94A3E5531E9584ED005727E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A3E5561E9584ED005727E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +48,16 @@
 		94A3E55D1E9584ED005727E4 /* KosmosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosmosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3E5611E9584ED005727E4 /* KosmosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosmosTests.swift; sourceTree = "<group>"; };
 		94A3E5631E9584ED005727E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A3E56C1E958721005727E4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		94A3E56E1E958B2E005727E4 /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductTableViewController.swift; path = ../ProductTableViewController.swift; sourceTree = "<group>"; };
+		94A3E5701E958B9F005727E4 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		94D721571EA01D9600DDFC4D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSelectionViewController.swift; sourceTree = "<group>"; };
+		AB89BF3FA82EC07F6DEDCEAF /* Pods-Kosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kosmos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos.debug.xcconfig"; sourceTree = "<group>"; };
+		C00D0AE753DC2A0DAD908776 /* Pods_KosmosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KosmosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C517E421FC6AAF07CF469C /* Pods-KosmosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KosmosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KosmosTests/Pods-KosmosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE40E372E03CFAE6A4CD197E /* Pods_Kosmos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0F9628E090759807C9C87A /* Pods_KosmosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1188DCEE7F5B73140813C6EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB89BF3FA82EC07F6DEDCEAF /* Pods-Kosmos.debug.xcconfig */,
+				1A8218C8F50FD903177E5ADB /* Pods-Kosmos.release.xcconfig */,
+				E2C517E421FC6AAF07CF469C /* Pods-KosmosTests.debug.xcconfig */,
+				30CBEA7F189D21E90B9B1CF1 /* Pods-KosmosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81987A89D169796E32766930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */,
+				C00D0AE753DC2A0DAD908776 /* Pods_KosmosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94A3E5401E9584ED005727E4 = {
 			isa = PBXGroup;
 			children = (
 				94A3E54B1E9584ED005727E4 /* Kosmos */,
 				94A3E5601E9584ED005727E4 /* KosmosTests */,
 				94A3E54A1E9584ED005727E4 /* Products */,
+				1188DCEE7F5B73140813C6EE /* Pods */,
+				81987A89D169796E32766930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +123,19 @@
 		94A3E54B1E9584ED005727E4 /* Kosmos */ = {
 			isa = PBXGroup;
 			children = (
+				94A3E56E1E958B2E005727E4 /* ProductTableViewController.swift */,
+				94A3E5701E958B9F005727E4 /* Product.swift */,
 				94A3E54C1E9584ED005727E4 /* AppDelegate.swift */,
-				94A3E54E1E9584ED005727E4 /* ViewController.swift */,
 				94A3E5501E9584ED005727E4 /* Main.storyboard */,
+				94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */,
+				94D721571EA01D9600DDFC4D /* TabBarViewController.swift */,
+				94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */,
+				94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */,
+				94A3E56C1E958721005727E4 /* ProductTableViewCell.swift */,
 				94A3E5531E9584ED005727E4 /* Assets.xcassets */,
 				94A3E5551E9584ED005727E4 /* LaunchScreen.storyboard */,
 				94A3E5581E9584ED005727E4 /* Info.plist */,
+				943471CB1EA818FF005323E3 /* GoogleService-Info.plist */,
 			);
 			path = Kosmos;
 			sourceTree = "<group>";
@@ -103,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A3E5661E9584ED005727E4 /* Build configuration list for PBXNativeTarget "Kosmos" */;
 			buildPhases = (
+				EF48DAF41122FCECEF0E5CE3 /* [CP] Check Pods Manifest.lock */,
 				94A3E5451E9584ED005727E4 /* Sources */,
 				94A3E5461E9584ED005727E4 /* Frameworks */,
 				94A3E5471E9584ED005727E4 /* Resources */,
+				167714A936B16875D62F368E /* [CP] Embed Pods Frameworks */,
+				5C662702234C2FF6600ED7F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A3E5691E9584ED005727E4 /* Build configuration list for PBXNativeTarget "KosmosTests" */;
 			buildPhases = (
+				AA2AB86512B08F18D506C980 /* [CP] Check Pods Manifest.lock */,
 				94A3E5591E9584ED005727E4 /* Sources */,
 				94A3E55A1E9584ED005727E4 /* Frameworks */,
 				94A3E55B1E9584ED005727E4 /* Resources */,
+				688637FE17DD6A0490EE92A7 /* [CP] Embed Pods Frameworks */,
+				8224901B294F1CBB93769DFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A3E5571E9584ED005727E4 /* LaunchScreen.storyboard in Resources */,
+				943471CC1EA81900005323E3 /* GoogleService-Info.plist in Resources */,
 				94A3E5541E9584ED005727E4 /* Assets.xcassets in Resources */,
 				94A3E5521E9584ED005727E4 /* Main.storyboard in Resources */,
 			);
@@ -194,12 +254,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		167714A936B16875D62F368E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C662702234C2FF6600ED7F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688637FE17DD6A0490EE92A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KosmosTests/Pods-KosmosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8224901B294F1CBB93769DFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KosmosTests/Pods-KosmosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2AB86512B08F18D506C980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF48DAF41122FCECEF0E5CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94A3E5451E9584ED005727E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A3E54F1E9584ED005727E4 /* ViewController.swift in Sources */,
+				94A3E56D1E958721005727E4 /* ProductTableViewCell.swift in Sources */,
+				94D19C521E975B16009B2119 /* AnswerTableViewCell.swift in Sources */,
+				94D7215A1EA069BD00DDFC4D /* AddSelectionViewController.swift in Sources */,
+				94D19C501E9759AC009B2119 /* InfoTableViewController.swift in Sources */,
+				94A3E5711E958B9F005727E4 /* Product.swift in Sources */,
+				94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */,
+				94A3E56F1E958B2E005727E4 /* ProductTableViewController.swift in Sources */,
 				94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +498,7 @@
 		};
 		94A3E5671E9584ED005727E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB89BF3FA82EC07F6DEDCEAF /* Pods-Kosmos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kosmos/Info.plist;
@@ -351,6 +511,7 @@
 		};
 		94A3E5681E9584ED005727E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8218C8F50FD903177E5ADB /* Pods-Kosmos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kosmos/Info.plist;
@@ -363,6 +524,7 @@
 		};
 		94A3E56A1E9584ED005727E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C517E421FC6AAF07CF469C /* Pods-KosmosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,6 +539,7 @@
 		};
 		94A3E56B1E9584ED005727E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CBEA7F189D21E90B9B1CF1 /* Pods-KosmosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -408,6 +571,7 @@
 				94A3E5681E9584ED005727E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94A3E5691E9584ED005727E4 /* Build configuration list for PBXNativeTarget "KosmosTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +580,7 @@
 				94A3E56B1E9584ED005727E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
