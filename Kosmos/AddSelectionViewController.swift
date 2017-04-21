@@ -17,6 +17,7 @@ class AddSelectionViewController: UIViewController {
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var searchText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

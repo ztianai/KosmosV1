@@ -16,6 +16,7 @@ class TabBarViewController: UITabBarController {
     var hairBtn: UIStackView!
     var cancelBtn: UIButton!
     var button: UIButton!
+    var searchText: UITextField!
     
     var skinBtnPosY: CGFloat!
     var makeupBtnPosY: CGFloat!
@@ -72,6 +73,7 @@ class TabBarViewController: UITabBarController {
             self.hairBtn = ASVC.hairBtn
             self.cancelBtn = ASVC.cancelBtn
             self.button = ASVC.button
+            self.searchText = ASVC.searchText
             
             self.skinBtnPosY = ASVC.skinBtn.frame.origin.y
             self.makeupBtnPosY = ASVC.makeupBtn.frame.origin.y
@@ -107,6 +109,7 @@ class TabBarViewController: UITabBarController {
     func buttonPressed(_ sender: UIButton) {
         print("boo")
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "scanSelect") as! ProductViewController
+        vc.searchText = self.searchText.text
         self.present(vc, animated: true, completion: nil)
        //  self.blurView.alpha = 0
        // self.popView.alpha = 0
