@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		943471CC1EA81900005323E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 943471CB1EA818FF005323E3 /* GoogleService-Info.plist */; };
+		9463AE6A1EA977BC00EC25EC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463AE691EA977BC00EC25EC /* ProductViewController.swift */; };
 		94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54C1E9584ED005727E4 /* AppDelegate.swift */; };
 		94A3E5521E9584ED005727E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5501E9584ED005727E4 /* Main.storyboard */; };
 		94A3E5541E9584ED005727E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5531E9584ED005727E4 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		30CBEA7F189D21E90B9B1CF1 /* Pods-KosmosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KosmosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KosmosTests/Pods-KosmosTests.release.xcconfig"; sourceTree = "<group>"; };
 		457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943471CB1EA818FF005323E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9463AE691EA977BC00EC25EC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		94A3E5491E9584ED005727E4 /* Kosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3E54C1E9584ED005727E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A3E5511E9584ED005727E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				94A3E5501E9584ED005727E4 /* Main.storyboard */,
 				94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */,
 				94D721571EA01D9600DDFC4D /* TabBarViewController.swift */,
+				9463AE691EA977BC00EC25EC /* ProductViewController.swift */,
 				94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */,
 				94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */,
 				94A3E56C1E958721005727E4 /* ProductTableViewCell.swift */,
@@ -360,6 +363,7 @@
 				94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */,
 				94A3E56F1E958B2E005727E4 /* ProductTableViewController.swift in Sources */,
 				94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */,
+				9463AE6A1EA977BC00EC25EC /* ProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

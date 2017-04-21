@@ -15,6 +15,7 @@ class TabBarViewController: UITabBarController {
     var makeupBtn: UIStackView!
     var hairBtn: UIStackView!
     var cancelBtn: UIButton!
+    var button: UIButton!
     
     var skinBtnPosY: CGFloat!
     var makeupBtnPosY: CGFloat!
@@ -70,6 +71,7 @@ class TabBarViewController: UITabBarController {
             self.makeupBtn = ASVC.makeupBtn
             self.hairBtn = ASVC.hairBtn
             self.cancelBtn = ASVC.cancelBtn
+            self.button = ASVC.button
             
             self.skinBtnPosY = ASVC.skinBtn.frame.origin.y
             self.makeupBtnPosY = ASVC.makeupBtn.frame.origin.y
@@ -82,6 +84,7 @@ class TabBarViewController: UITabBarController {
             self.blurView.alpha = 0
             
             self.cancelBtn!.addTarget(self, action: #selector(TabBarViewController.cancelBtnPressed(_:)), for: .touchUpInside)
+            self.button!.addTarget(self, action: #selector(TabBarViewController.buttonPressed(_:)), for: .touchUpInside)
             
             self.flag = true
         }
@@ -101,7 +104,14 @@ class TabBarViewController: UITabBarController {
 //        self.hairBtn.frame.origin.y = WINDOW_HEIGHT
         
     }
-    
+    func buttonPressed(_ sender: UIButton) {
+        print("boo")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "scanSelect") as! ProductViewController
+        self.present(vc, animated: true, completion: nil)
+       //  self.blurView.alpha = 0
+       // self.popView.alpha = 0
+       // self.performSegue(withIdentifier: "scanSelection", sender: self)
+    }
     
     func cancelBtnPressed(_ sender: UIButton) {
         

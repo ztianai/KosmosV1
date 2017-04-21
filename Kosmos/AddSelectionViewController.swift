@@ -15,6 +15,7 @@ class AddSelectionViewController: UIViewController {
     @IBOutlet weak var makeupBtn: UIStackView!
     @IBOutlet weak var hairBtn: UIStackView!
     @IBOutlet weak var cancelBtn: UIButton!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +23,8 @@ class AddSelectionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+//    @IBAction func buttonClicked(_ sender: Any) {
+//        print("add")
+//    }
     
 }
