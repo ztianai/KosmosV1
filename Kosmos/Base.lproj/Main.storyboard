@@ -38,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="1100" y="-52.623688155922046"/>
         </scene>
-        <!--Info-->
+        <!--Cosmetics Q&A-->
         <scene sceneID="3MZ-Rd-rOW">
             <objects>
                 <tableViewController id="UO3-Fe-Njl" customClass="InfoTableViewController" customModule="Kosmos" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                             <outlet property="delegate" destination="UO3-Fe-Njl" id="fc8-Um-iDY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Info" id="J6E-NE-Sa0"/>
+                    <navigationItem key="navigationItem" title="Cosmetics Q&amp;A" id="J6E-NE-Sa0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlD-DB-Mzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,7 +112,7 @@
             </objects>
             <point key="canvasLocation" x="-351" y="1430"/>
         </scene>
-        <!--Product-->
+        <!--My Collection-->
         <scene sceneID="RNE-Vy-aQ7">
             <objects>
                 <tableViewController id="INn-Bx-FGG" customClass="ProductTableViewController" customModule="Kosmos" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,7 +156,7 @@
                             <outlet property="delegate" destination="INn-Bx-FGG" id="Zmj-JR-51u"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Product" id="6mm-Ew-qfB"/>
+                    <navigationItem key="navigationItem" title="My Collection" id="6mm-Ew-qfB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uck-CI-8VE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -298,11 +298,11 @@
             </objects>
             <point key="canvasLocation" x="-1444" y="853"/>
         </scene>
-        <!--Info-->
+        <!--FAQ-->
         <scene sceneID="E8a-ZN-Yt8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PfB-5J-x3d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Info" image="info" id="vk0-n4-Gs3"/>
+                    <tabBarItem key="tabBarItem" title="FAQ" image="info" id="vk0-n4-Gs3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbi-Va-EIS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
