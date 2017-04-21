@@ -93,7 +93,7 @@ class TabBarViewController: UITabBarController {
         
         UIView.animate(withDuration: 0.7, animations: { () -> Void in
             
-            self.cancelBtn.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
+            self.cancelBtn.transform = CGAffineTransform(rotationAngle: .pi/2)
             self.popView.alpha = 1
             self.blurView.alpha = 1
         })
