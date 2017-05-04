@@ -58,8 +58,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             // Turn it into machine readable code
             let barcodeReadable = barcodeData as? AVMetadataMachineReadableCodeObject;
             if let readableCode = barcodeReadable {
-                // Send the barcode as a string to barcodeDetected()
-//                barcodeDetected(readableCode.stringValue);
                 AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
 
                 let alert = UIAlertController(title: "Found a Barcode!", message: readableCode.stringValue, preferredStyle: UIAlertControllerStyle.alert)
@@ -68,9 +66,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
             }
             
-            // Vibrate the device to give the user some feedback.
-            
-            // Avoid a very buzzy device.
 //            session.stopRunning()
         }
     }
