@@ -19,9 +19,10 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
     @IBOutlet weak var allergyTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadDefaults()
         allergyTableView.delegate = self
         allergyTableView.dataSource = self
-//        circleImage()
+        circleImage()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,9 +37,10 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
 
     
     func circleImage() {
-        profileImageView.layer.cornerRadius = profileImageView.frame.size.height/2
-        profileImageView.clipsToBounds = true
-        profileImageView.layer.masksToBounds = false
+        self.profileImageView.contentMode = .scaleAspectFit
+        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.height/2
+        self.profileImageView.clipsToBounds = true
+//        profileImageView.layer.masksToBounds = false
     }
     
     func takePhoto() {
@@ -52,7 +54,7 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
             profileImageView.contentMode = .scaleAspectFit
             profileImageView.image = pickedImage
         }
@@ -78,7 +80,9 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
         })
         
         alertMenu.addAction(UIAlertAction(title: "Done", style: .default, handler: { (alert) in
-            self.nameLabel.text = alertMenu.textFields![0].text
+            let nameString = alertMenu.textFields![0].text
+            self.setName(name: nameString!)
+            self.loadDefaults()
         }))
         
         alertMenu.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in
@@ -86,6 +90,17 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
         }))
         
         self.present(alertMenu, animated: true, completion: nil)
+    }
+    
+    func setName(name: String) {
+        let defaults = UserDefaults.standard
+        defaults.set(name, forKey: "userName")
+        defaults.synchronize()
+    }
+    
+    func loadDefaults() {
+        let defaults = UserDefaults.standard
+        nameLabel.text = defaults.object(forKey: "userName") as? String
     }
     
     @IBAction func touchSettings(_ sender: Any) {
