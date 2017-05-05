@@ -23,6 +23,7 @@
 		94D7215A1EA069BD00DDFC4D /* AddSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */; };
 		AA14FA311EB201CE00DEBB34 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */; };
 		AAA8982F1EA9CAE000C6B4A0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */; };
+		AAD1FCF71EBC8FCC004BD8AF /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */; };
 		AAE221191EB2F34F00D48818 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE221181EB2F34F00D48818 /* ScannerViewController.swift */; };
 		FE0F9628E090759807C9C87A /* Pods_KosmosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D0AE753DC2A0DAD908776 /* Pods_KosmosTests.framework */; };
 		FE40E372E03CFAE6A4CD197E /* Pods_Kosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */; };
@@ -62,6 +63,7 @@
 		94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSelectionViewController.swift; sourceTree = "<group>"; };
 		AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		AAE221181EB2F34F00D48818 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		AB89BF3FA82EC07F6DEDCEAF /* Pods-Kosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kosmos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos.debug.xcconfig"; sourceTree = "<group>"; };
 		C00D0AE753DC2A0DAD908776 /* Pods_KosmosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KosmosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 				943471CB1EA818FF005323E3 /* GoogleService-Info.plist */,
 				AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */,
 				AAE221181EB2F34F00D48818 /* ScannerViewController.swift */,
+				AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */,
 			);
 			path = Kosmos;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				94D7215A1EA069BD00DDFC4D /* AddSelectionViewController.swift in Sources */,
 				94D19C501E9759AC009B2119 /* InfoTableViewController.swift in Sources */,
 				94A3E5711E958B9F005727E4 /* Product.swift in Sources */,
+				AAD1FCF71EBC8FCC004BD8AF /* AddItemViewController.swift in Sources */,
 				94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */,
 				AAA8982F1EA9CAE000C6B4A0 /* AccountViewController.swift in Sources */,
 				AAE221191EB2F34F00D48818 /* ScannerViewController.swift in Sources */,

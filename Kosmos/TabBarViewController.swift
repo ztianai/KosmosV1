@@ -25,6 +25,8 @@ class TabBarViewController: UITabBarController {
     var popView: UIView!
     var blurView: UIView!
     
+    let postBtn = UIButton()
+    
     var flag = false
 
     override func viewDidLoad() {
@@ -42,18 +44,19 @@ class TabBarViewController: UITabBarController {
         modalView.frame = CGRect(x: GRID_WIDTH * 2, y: WINDOW_HEIGHT - TAB_HEIGHT, width: GRID_WIDTH, height: TAB_HEIGHT)
         self.view.addSubview(modalView)
         
-        let postBtn = UIButton()
+//        let postBtn = UIButton()
         postBtn.frame = CGRect(x: GRID_WIDTH * 2 + BTN_WIDTH / 2 - MARGIN_X * 3, y: WINDOW_HEIGHT - TAB_HEIGHT - TAB_HEIGHT / 3, width: BTN_WIDTH + MARGIN_X * 2, height: BTN_WIDTH + MARGIN_X * 2)
         postBtn.setBackgroundImage(UIImage(named: "post_btn"), for: UIControlState())
         self.view.addSubview(postBtn)
         
         postBtn.addTarget(self, action: #selector(TabBarViewController.postButtonClicked(_:)), for: .touchUpInside)
         
-        
-
         // Do any additional setup after loading the view.
     }
     
+    func showPostButton(show: Bool) {
+        postBtn.isHidden = !show
+    }
     
     func postButtonClicked(_ sender: UIButton) {
         if !flag {
