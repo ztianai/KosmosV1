@@ -53,15 +53,19 @@ class ScrollViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset.y)
+//        print(scrollView.contentOffset.y)
+        
 //        if scrollView.contentOffset.x != 0 {
 //            scrollView.contentOffset.x = 0
 //        }
-        
+        let tabBar = self.tabBarController as! TabBarViewController
+
         if scrollView.contentOffset.y > self.view.frame.height - 20 {
             self.tabBarController?.tabBar.isHidden = false
+            tabBar.showPostButton(show: true)
         } else {
             self.tabBarController?.tabBar.isHidden = true
+            tabBar.showPostButton(show: false)
         }
     }
     
