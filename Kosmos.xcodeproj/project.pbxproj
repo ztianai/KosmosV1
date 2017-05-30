@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9425F3DC1EDD1E6500AC998E /* Faq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425F3DB1EDD1E6500AC998E /* Faq.swift */; };
 		943471CC1EA81900005323E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 943471CB1EA818FF005323E3 /* GoogleService-Info.plist */; };
 		9463AE6A1EA977BC00EC25EC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463AE691EA977BC00EC25EC /* ProductViewController.swift */; };
 		94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54C1E9584ED005727E4 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		1A8218C8F50FD903177E5ADB /* Pods-Kosmos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kosmos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos.release.xcconfig"; sourceTree = "<group>"; };
 		30CBEA7F189D21E90B9B1CF1 /* Pods-KosmosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KosmosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KosmosTests/Pods-KosmosTests.release.xcconfig"; sourceTree = "<group>"; };
 		457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9425F3DB1EDD1E6500AC998E /* Faq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faq.swift; sourceTree = "<group>"; };
 		943471CB1EA818FF005323E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9463AE691EA977BC00EC25EC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		94A3E5491E9584ED005727E4 /* Kosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 			children = (
 				94A3E56E1E958B2E005727E4 /* ProductTableViewController.swift */,
 				94A3E5701E958B9F005727E4 /* Product.swift */,
+				9425F3DB1EDD1E6500AC998E /* Faq.swift */,
 				94A3E54C1E9584ED005727E4 /* AppDelegate.swift */,
 				94A3E5501E9584ED005727E4 /* Main.storyboard */,
 				94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */,
@@ -220,6 +223,7 @@
 				TargetAttributes = {
 					94A3E5481E9584ED005727E4 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = AUUPQ9U3PP;
 						ProvisioningStyle = Automatic;
 					};
 					94A3E55C1E9584ED005727E4 = {
@@ -377,6 +381,7 @@
 				AAA8982F1EA9CAE000C6B4A0 /* AccountViewController.swift in Sources */,
 				AAE221191EB2F34F00D48818 /* ScannerViewController.swift in Sources */,
 				AA14FA311EB201CE00DEBB34 /* ScrollViewController.swift in Sources */,
+				9425F3DC1EDD1E6500AC998E /* Faq.swift in Sources */,
 				94A3E56F1E958B2E005727E4 /* ProductTableViewController.swift in Sources */,
 				94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */,
 				9463AE6A1EA977BC00EC25EC /* ProductViewController.swift in Sources */,
@@ -521,11 +526,14 @@
 			baseConfigurationReference = AB89BF3FA82EC07F6DEDCEAF /* Pods-Kosmos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AUUPQ9U3PP;
 				INFOPLIST_FILE = Kosmos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -535,11 +543,14 @@
 			baseConfigurationReference = 1A8218C8F50FD903177E5ADB /* Pods-Kosmos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AUUPQ9U3PP;
 				INFOPLIST_FILE = Kosmos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

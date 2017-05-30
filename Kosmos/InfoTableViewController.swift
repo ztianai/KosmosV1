@@ -10,8 +10,13 @@ import UIKit
 
 class InfoTableViewController: UITableViewController {
     var selectedIndexPath : IndexPath?
+    
+    var faqs = [Faq]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadFaqs()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,7 +37,7 @@ class InfoTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return faqs.count
     }
 
     
@@ -44,8 +49,13 @@ class InfoTableViewController: UITableViewController {
         }
         
         
-        cell.questionLabel.text = "When to expire?"
-        cell.answerLabel.text = "Depend on your open date and the production date."
+//        cell.questionLabel.text = "When to expire?"
+//        cell.answerLabel.text = "Depend on your open date and the production date."
+        
+        let faq = faqs[indexPath.row]
+        
+        cell.questionLabel.text = faq.question
+        cell.answerLabel.text = faq.answer
 
         // Configure the cell...
 
@@ -140,5 +150,38 @@ class InfoTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    private func loadFaqs() {
+        guard let faq1 = Faq(question: "When does my cosmetic expire?", answer: "A shelf life cosmetics depends on a period after opening and production data.") else {
+            fatalError("Unable to instantiate faq1")
+        }
+        
+        guard let faq2 = Faq(question: "What is period after opening?", answer: "Some cosmetics should be used within a specified period of time after opening due to oxidation and microbiological factors. Their packaging has a drawing of an open jar, inside it, there is a number representing the number of months.") else {
+            fatalError("Unable to instantiate faq1")
+        }
+        
+        guard let faq3 = Faq(question: "What is production data?", answer: "Unused cosmetics also lose their freshness and become dry. Some manufacturer has to put the expiration date only on cosmetics whose shelf life is less then 30 months.") else {
+            fatalError("Unable to instantiate faq1")
+        }
+        
+        guard let faq4 = Faq(question: "Any common periods of suitablity?", answer: "Perfumes can usually last about 5 years. Skin care can store at least 3 years. For makeup, it is usually between 3 years and 5 years.") else {
+            fatalError("Unable to instantiate faq1")
+        }
+        
+        guard let faq5 = Faq(question: "What is Kosmos?", answer: "Kosmos is a cosmetics tracking system that organize and analyze users' cosmetic products by alerting expiration date and personal allergic ingredients in order to help our users to find and use safer products.") else {
+            fatalError("Unable to instantiate faq1")
+        }
+
+        guard let faq6 = Faq(question: "Who created Kosmos?", answer: "Kosmos is created by a group of informatics students at University of Washington in 2017. They are: Huijie, Tianai, Tim and Yutong.") else {
+            fatalError("Unable to instantiate faq1")
+        }
+        
+        faqs += [faq1, faq2, faq3, faq4, faq5, faq6]
+        
+        
+    }
+    
+    
 
 }

@@ -11,8 +11,8 @@ class AnswerTableViewCell : UITableViewCell {
     var isObserving = false
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
-    class var expandedHeight: CGFloat{ get {return 100}}
-    class var defaultHeight: CGFloat{get {return 44}}
+    class var expandedHeight: CGFloat{ get {return 250}}
+    class var defaultHeight: CGFloat{get {return 100}}
     
     func checkHeight(){
         answerLabel.isHidden = (frame.size.height < AnswerTableViewCell.expandedHeight)
