@@ -26,6 +26,7 @@ class AddItemViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Add Item"
+        self.navigationController?.navigationBar.isTranslucent = false
         let saveItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(saveItemTap(sender:)))
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 1.0, green: 140.0/255, blue: 140.0/255, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
@@ -40,6 +41,8 @@ class AddItemViewController: UIViewController, UITableViewDelegate, UITableViewD
         ingredients = ingredientString.components(separatedBy: ", ")
         
         newItem = ProductItem(barcode: itemInfo[4], name: itemInfo[1], brand: itemInfo[0], type: itemInfo[2], ingredients: ingredients)
+        
+        print(newItem!.name + " " + (newItem?.barcode)!)
         ingrTableView.delegate = self
         ingrTableView.dataSource = self
         
@@ -56,10 +59,13 @@ class AddItemViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func saveItemTap(sender: Any?) {
-        let alert = UIAlertController(title: "Your item was added to your collection! ", message: "not really because this functionality doesn't exist yet, but it will soon!", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Your item was added to your collection! ", message: "", preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: { (alert) in
+            print("added")
             self.saveItem(item: self.newItem!)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabBarController")
+            self.present(vc!, animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
     }
@@ -67,14 +73,17 @@ class AddItemViewController: UIViewController, UITableViewDelegate, UITableViewD
     func saveItem(item: ProductItem) {
         let defaults = UserDefaults.standard
         if defaults.object(forKey: "itemList") != nil {
-            var itemDict = defaults.object(forKey: "itemList") as? [String: ProductItem]
-            itemDict?[item.barcode] = item
-            defaults.set(itemDict, forKey: "itemList")
+            let decoded  = defaults.object(forKey: "itemList") as! Data
+            var itemDict = NSKeyedUnarchiver.unarchiveObject(with: decoded) as! [String: ProductItem]
+            itemDict[item.barcode] = item
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: itemDict)
+            defaults.set(encodedData, forKey: "itemList")
             defaults.synchronize()
         } else {
             var itemDict = [String: ProductItem]()
             itemDict[item.barcode] = item
-            defaults.set(itemDict, forKey: "itemList")
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: itemDict)
+            defaults.set(encodedData, forKey: "itemList")
             defaults.synchronize()
         }
     }
