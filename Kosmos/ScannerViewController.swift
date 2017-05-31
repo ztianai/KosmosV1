@@ -107,8 +107,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                 }
             } else {
                 print("product not found")
-                let alert = UIAlertController(title: "Item not found", message: "The item scanned was not found in our database, please try again. [" + barcode + "]", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in self.restartSessions()}))
+                let alert = UIAlertController(title: "Item not found", message: "The item scanned was not found in our database, please try again. Would you like to request the addition of this item? [" + barcode + "]", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "No", style: .cancel, handler:{(action) in self.restartSessions()}))
+                alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: {(action) in self.restartSessions()}))
                 self.present(alert, animated: true, completion: nil)
             }
         })

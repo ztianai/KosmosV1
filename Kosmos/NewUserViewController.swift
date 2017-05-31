@@ -116,7 +116,7 @@ class NewUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
 
     @IBAction func startApp(_ sender: Any) {
         let defaults = UserDefaults.standard
-        defaults.set(false, forKey: "onboarding")
+//        defaults.set(false, forKey: "onboarding")
         defaults.set(self.nameTextField.text, forKey: "name")
         defaults.set(self.ageTextField.text, forKey: "age")
         if let allergiesText = self.allergies.text {

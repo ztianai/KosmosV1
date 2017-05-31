@@ -14,12 +14,22 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
     var products = [ProductItem]()
     let defaults = UserDefaults.standard
     var product: ProductItem?
+//    var days2 = 0.0
 
+    @IBOutlet weak var onbView: UIView!
     @IBOutlet weak var numProducts: UILabel!
     @IBOutlet weak var productTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        if defaults.object(forKey: "onboarding") as! Bool == true {
+        
+//            defaults.set(false, forKey: "onboarding")
+//            defaults.synchronize()
+//        }
+
+        
+        
         self.title = "My Collection"
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 1.0, green: 140.0/255, blue: 140.0/255, alpha: 1.0)
@@ -44,9 +54,7 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         
         self.productTableView.delegate = self
         self.productTableView.dataSource = self
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.productTableView.tableFooterView = UIView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -111,25 +119,37 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         var days = 0.0
         if product.eDate.characters.count > 0 {
             let eDate = dateFormatter.date(from: product.eDate)
-            days = Double(eDate!.days(from: currentDate))
+            days = Double(currentDate.days(from: eDate!))
         }
-        print(days)
-        if days < 0.0 {
-            days = 0.0
-        } else if days > 365.0 {
+        if days <= -365.0 {
+            days = 0
+        } else if days < 0.0 {
+            days += 365.0
+        } else {
             days = 365.0
         }
+//        days2 = days
+        if days == 365.0 {
+            let label = UILabel(frame: CGRect(x: 256, y: 30, width: 120, height: 20))
+            label.font = UIFont.boldSystemFont(ofSize: 20)
+            label.textColor = UIColor(red: 182.0/255, green: 0.0, blue: 53.0/255, alpha: 1.0)
+            label.textAlignment = .center
+            label.text = "Expired !"
+            cell.addSubview(label)
+        } else {
+            let rect1 = CGRect(x: 280, y: 30, width: 80, height: 10)
+            let rect2 = CGRect(x: 280, y: 30, width: 80 - 80 * ((365.0-days)/365.0), height: 10)
+            let testView1: UIView = UIView(frame: rect1)
+            testView1.backgroundColor = UIColor(red: 239.0/255, green: 239.0/255, blue: 239.0/255, alpha: 1.0)
+            let testView2: UIView = UIView(frame: rect2)
+            testView2.backgroundColor = UIColor(red: 182.0/255, green: 0.0, blue: 53.0/255, alpha: 1.0)
+            
+            
+            cell.addSubview(testView1)
+            cell.addSubview(testView2)
+        }
         
-        let rect1 = CGRect(x: 280, y: 30, width: 80, height: 10)
-        let rect2 = CGRect(x: 280, y: 30, width: 80 * (days/365.0), height: 10)
-        let testView1: UIView = UIView(frame: rect1)
-        testView1.backgroundColor = UIColor(red: 239.0/255, green: 239.0/255, blue: 239.0/255, alpha: 1.0)
-        let testView2: UIView = UIView(frame: rect2)
-        testView2.backgroundColor = UIColor(red: 182.0/255, green: 0.0, blue: 53.0/255, alpha: 1.0)
         
-        
-        cell.addSubview(testView1)
-        cell.addSubview(testView2)
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
@@ -146,7 +166,6 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         if segue.identifier == "collectionToProduct" {
             let nav = segue.destination as! ProductViewController
 //            let destinationVC = nav.topViewController as! ProductViewController
-            nav.product = self.product
-        }
+            nav.product = self.product        }
     }
 }

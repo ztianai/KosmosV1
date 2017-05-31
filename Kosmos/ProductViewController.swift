@@ -12,8 +12,7 @@ import Foundation
 class ProductViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var product: ProductItem?
-    
-//    var barcode: String?
+//    var days: Double?
     
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemBrandAndType: UILabel!
@@ -24,17 +23,8 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var ingrTableView: UITableView!
     
-//    var barcodeString: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if barcodeString != nil {
-//            self.barcodeString = barcode!;
-//        }
-//        let defaults = UserDefaults.standard
-//        let decoded  = defaults.object(forKey: "itemList") as! Data
-//        var itemDict = NSKeyedUnarchiver.unarchiveObject(with: decoded) as! [String: ProductItem]
-//        product = itemDict[barcodeString]
         
         self.title = (product?.brand)! + " " + (product?.name)!
         self.navigationController?.navigationBar.isTranslucent = false
@@ -56,6 +46,44 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         ingrTableView.delegate = self
         ingrTableView.dataSource = self
         ingrTableView.allowsSelection = false
+        
+        var days = 0.0
+        let currentDate = NSDate() as Date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        dateFormatter.timeStyle = DateFormatter.Style.none
+        if (product?.eDate.characters.count)! > 0 {
+            let eDate = dateFormatter.date(from: (product?.eDate)!)
+            days = Double(currentDate.days(from: eDate!))
+        }
+        if days <= -365.0 {
+            days = 0
+        } else if days < 0.0 {
+            days += 365.0
+        } else {
+            days = 365.0
+        }
+        
+        if days == 365.0 {
+            let label = UILabel(frame: CGRect(x: 5, y: 67, width: 120, height: 20))
+            label.font = UIFont.boldSystemFont(ofSize: 20)
+            label.textColor = UIColor(red: 182.0/255, green: 0.0, blue: 53.0/255, alpha: 1.0)
+            label.textAlignment = .center
+            label.text = "Expired !"
+            view.addSubview(label)
+        } else {
+            let rect1 = CGRect(x: 27, y: 72, width: 120, height: 10)
+            let rect2 = CGRect(x: 27, y: 72, width: 120 - 120 * ((365.0-days)/365.0), height: 10)
+            let testView1: UIView = UIView(frame: rect1)
+            testView1.backgroundColor = UIColor(red: 239.0/255, green: 239.0/255, blue: 239.0/255, alpha: 1.0)
+            let testView2: UIView = UIView(frame: rect2)
+            testView2.backgroundColor = UIColor(red: 182.0/255, green: 0.0, blue: 53.0/255, alpha: 1.0)
+            
+            
+            view.addSubview(testView1)
+            view.addSubview(testView2)
+        }
+
         
 //        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddItemViewController.dismissKeyboard))
 //        view.addGestureRecognizer(tap)

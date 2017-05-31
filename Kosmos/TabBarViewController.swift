@@ -60,7 +60,9 @@ class TabBarViewController: UITabBarController {
     
     func postButtonClicked(_ sender: UIButton) {
         print("button was pressed")
-        self.tabBarController?.selectedIndex = 0
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabBarController")
+        self.present(vc!, animated: false, completion: nil)
+//        self.tabBarController?.selectedIndex = 0
 //        if !flag {
 //            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
 //            let blurView = UIVisualEffectView(effect: blurEffect)
