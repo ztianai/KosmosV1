@@ -87,14 +87,17 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                     let brandValue = snapValues?["brand"]
                     let nameValue = snapValues?["name"]
                     let typeValue = snapValues?["type"]
+                    let ingredValue = snapValues?["ingredients"]
                     self.scannedItem.append(brandValue as! String)
                     self.scannedItem.append(nameValue as! String)
                     self.scannedItem.append(typeValue as! String)
+                    self.scannedItem.append(ingredValue as! String)
+                    self.scannedItem.append(barcode)
                     self.performSegue(withIdentifier: "scannerToAddItem", sender: nil)
                 }
             } else {
                 print("product not found")
-                let alert = UIAlertController(title: "Item not found", message: "The item scanned was not found in our database, please try again?????", preferredStyle: UIAlertControllerStyle.alert)
+                let alert = UIAlertController(title: "Item not found", message: "The item scanned was not found in our database, please try again. [" + barcode + "]", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in self.restartSessions()}))
                 self.present(alert, animated: true, completion: nil)
             }

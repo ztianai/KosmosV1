@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9425F3DC1EDD1E6500AC998E /* Faq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425F3DB1EDD1E6500AC998E /* Faq.swift */; };
 		943471CC1EA81900005323E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 943471CB1EA818FF005323E3 /* GoogleService-Info.plist */; };
-		9463AE6A1EA977BC00EC25EC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463AE691EA977BC00EC25EC /* ProductViewController.swift */; };
 		94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3E54C1E9584ED005727E4 /* AppDelegate.swift */; };
 		94A3E5521E9584ED005727E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5501E9584ED005727E4 /* Main.storyboard */; };
 		94A3E5541E9584ED005727E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3E5531E9584ED005727E4 /* Assets.xcassets */; };
@@ -21,9 +20,9 @@
 		94D19C501E9759AC009B2119 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */; };
 		94D19C521E975B16009B2119 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */; };
 		94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D721571EA01D9600DDFC4D /* TabBarViewController.swift */; };
-		94D7215A1EA069BD00DDFC4D /* AddSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */; };
 		AA14FA311EB201CE00DEBB34 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */; };
 		AAA8982F1EA9CAE000C6B4A0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */; };
+		AAB638BA1EDE44EA00F841D1 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB638B91EDE44EA00F841D1 /* ProductItem.swift */; };
 		AAD1FCF71EBC8FCC004BD8AF /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */; };
 		AAE221191EB2F34F00D48818 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE221181EB2F34F00D48818 /* ScannerViewController.swift */; };
 		FE0F9628E090759807C9C87A /* Pods_KosmosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00D0AE753DC2A0DAD908776 /* Pods_KosmosTests.framework */; };
@@ -46,7 +45,6 @@
 		457A6C8140A5BB5C45F57203 /* Pods_Kosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9425F3DB1EDD1E6500AC998E /* Faq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faq.swift; sourceTree = "<group>"; };
 		943471CB1EA818FF005323E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9463AE691EA977BC00EC25EC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		94A3E5491E9584ED005727E4 /* Kosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3E54C1E9584ED005727E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A3E5511E9584ED005727E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,9 +60,9 @@
 		94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		94D721571EA01D9600DDFC4D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSelectionViewController.swift; sourceTree = "<group>"; };
 		AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		AAB638B91EDE44EA00F841D1 /* ProductItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
 		AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		AAE221181EB2F34F00D48818 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		AB89BF3FA82EC07F6DEDCEAF /* Pods-Kosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kosmos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kosmos/Pods-Kosmos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,10 +138,8 @@
 				9425F3DB1EDD1E6500AC998E /* Faq.swift */,
 				94A3E54C1E9584ED005727E4 /* AppDelegate.swift */,
 				94A3E5501E9584ED005727E4 /* Main.storyboard */,
-				94D721591EA069BD00DDFC4D /* AddSelectionViewController.swift */,
 				AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */,
 				94D721571EA01D9600DDFC4D /* TabBarViewController.swift */,
-				9463AE691EA977BC00EC25EC /* ProductViewController.swift */,
 				94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */,
 				94D19C4F1E9759AC009B2119 /* InfoTableViewController.swift */,
 				94A3E56C1E958721005727E4 /* ProductTableViewCell.swift */,
@@ -154,6 +150,7 @@
 				AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */,
 				AAE221181EB2F34F00D48818 /* ScannerViewController.swift */,
 				AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */,
+				AAB638B91EDE44EA00F841D1 /* ProductItem.swift */,
 			);
 			path = Kosmos;
 			sourceTree = "<group>";
@@ -223,7 +220,7 @@
 				TargetAttributes = {
 					94A3E5481E9584ED005727E4 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = AUUPQ9U3PP;
+						DevelopmentTeam = 226PM9LLY5;
 						ProvisioningStyle = Automatic;
 					};
 					94A3E55C1E9584ED005727E4 = {
@@ -373,7 +370,7 @@
 			files = (
 				94A3E56D1E958721005727E4 /* ProductTableViewCell.swift in Sources */,
 				94D19C521E975B16009B2119 /* AnswerTableViewCell.swift in Sources */,
-				94D7215A1EA069BD00DDFC4D /* AddSelectionViewController.swift in Sources */,
+				AAB638BA1EDE44EA00F841D1 /* ProductItem.swift in Sources */,
 				94D19C501E9759AC009B2119 /* InfoTableViewController.swift in Sources */,
 				94A3E5711E958B9F005727E4 /* Product.swift in Sources */,
 				AAD1FCF71EBC8FCC004BD8AF /* AddItemViewController.swift in Sources */,
@@ -384,7 +381,6 @@
 				9425F3DC1EDD1E6500AC998E /* Faq.swift in Sources */,
 				94A3E56F1E958B2E005727E4 /* ProductTableViewController.swift in Sources */,
 				94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */,
-				9463AE6A1EA977BC00EC25EC /* ProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,14 +523,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AUUPQ9U3PP;
+				DEVELOPMENT_TEAM = 226PM9LLY5;
 				INFOPLIST_FILE = Kosmos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -544,14 +541,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AUUPQ9U3PP;
+				DEVELOPMENT_TEAM = 226PM9LLY5;
 				INFOPLIST_FILE = Kosmos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kosmos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
