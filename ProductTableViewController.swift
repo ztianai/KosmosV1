@@ -67,7 +67,7 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in
         }))
         
-        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { (alert) in
+        alert.addAction(UIAlertAction(title: "Reset", style: UIAlertActionStyle.default, handler: { (alert) in
             let defaults = UserDefaults.standard
             defaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
             defaults.synchronize()
