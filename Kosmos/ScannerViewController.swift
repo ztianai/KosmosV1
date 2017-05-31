@@ -60,42 +60,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        session = AVCaptureSession()
-//        
-//        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
-//        
-//        let inputDevice: AVCaptureDeviceInput?
-//        
-//        do {
-//            inputDevice = try AVCaptureDeviceInput(device: captureDevice)
-//        } catch {
-//            return
-//        }
-//        
-//        if session.canAddInput(inputDevice) {
-//            session.addInput(inputDevice)
-//        }
-//        
-//        
-//        let output = AVCaptureMetadataOutput()
-//        session.addOutput(output)
-//        output.metadataObjectTypes = output.availableMetadataObjectTypes
-//        
-//        previewLayer = AVCaptureVideoPreviewLayer(session: session);
-//        previewLayer.frame = view.layer.bounds;
-//        previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-//        view.layer.addSublayer(previewLayer);
-//        
-//        output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-//        
-//        session.startRunning()
-//        let rect = CGRect(x: self.view.frame.width/8, y: self.view.frame.height/2 - self.view.frame.width * 3 / 8, width: self.view.frame.width * 6 / 8, height: self.view.frame.width * 6 / 8)
-//        let testView: UIView = UIView(frame: rect)
-//        testView.layer.borderWidth = 2
-//        testView.layer.borderColor = UIColor.white.cgColor
-//        
-//        self.view.addSubview(testView)
-//        UIApplication.shared.keyWindow!.bringSubview(toFront: testView)
     }
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {

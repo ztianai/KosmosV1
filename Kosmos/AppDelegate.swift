@@ -19,6 +19,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UIApplication.shared.statusBarStyle = .lightContent
         FIRApp.configure()
+        
+        // check onboarding
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "onboarding") == nil {
+            defaults.set(true, forKey: "onboarding")
+            defaults.synchronize()
+        } else {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if defaults.object(forKey: "onboarding") as! Bool == true {
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageViewController")
+
+//                window?.rootViewController = UIStoryboard(name: "pageViewController", bundle: nil).instantiateInitialViewController()
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+
+            } else {
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: "tabBarController")
+
+//                window?.rootViewController = UIStoryboard(name: "tabBarController", bundle: nil).instantiateInitialViewController()
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+
+            }
+        }
+        
         return true
     }
 

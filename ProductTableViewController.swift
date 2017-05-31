@@ -13,6 +13,7 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
     
     var products = [ProductItem]()
     let defaults = UserDefaults.standard
+    var product: ProductItem?
 
     @IBOutlet weak var numProducts: UILabel!
     @IBOutlet weak var productTableView: UITableView!
@@ -24,6 +25,8 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 1.0, green: 140.0/255, blue: 140.0/255, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        let saveItem = UIBarButtonItem(title: "Reset Demo", style: .plain, target: self, action: #selector(resetDemo(sender:)))
+        self.navigationItem.rightBarButtonItem = saveItem
         
         if defaults.object(forKey: "itemList") != nil {
             let decoded  = defaults.object(forKey: "itemList") as! Data
@@ -49,6 +52,21 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidAppear(_ animated: Bool) {
         self.productTableView.reloadData()
     }
+    
+    func resetDemo(sender: Any?) {
+        let alert = UIAlertController(title: "Demo will be reset, continue?", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { (alert) in
+            let defaults = UserDefaults.standard
+            defaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+            defaults.synchronize()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
@@ -85,8 +103,50 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         
         let product = products[indexPath.row]
         cell.textLabel?.text = product.name
-        cell.detailTextLabel?.text = product.brand
+        cell.detailTextLabel?.text = product.brand + " | " + product.type
+        let currentDate = NSDate() as Date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        dateFormatter.timeStyle = DateFormatter.Style.none
+        var days = 0.0
+        if product.eDate.characters.count > 0 {
+            let eDate = dateFormatter.date(from: product.eDate)
+            days = Double(eDate!.days(from: currentDate))
+        }
+        print(days)
+        if days < 0.0 {
+            days = 0.0
+        } else if days > 365.0 {
+            days = 365.0
+        }
+        
+        let rect1 = CGRect(x: 280, y: 30, width: 80, height: 10)
+        let rect2 = CGRect(x: 280, y: 30, width: 80 * (days/365.0), height: 10)
+        let testView1: UIView = UIView(frame: rect1)
+        testView1.backgroundColor = UIColor(red: 239.0/255, green: 239.0/255, blue: 239.0/255, alpha: 1.0)
+        let testView2: UIView = UIView(frame: rect2)
+        testView2.backgroundColor = UIColor(red: 182.0/255, green: 0.0, blue: 53.0/255, alpha: 1.0)
+        
+        
+        cell.addSubview(testView1)
+        cell.addSubview(testView2)
+        cell.preservesSuperviewLayoutMargins = false
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.product = products[indexPath.row]
+        self.performSegue(withIdentifier: "collectionToProduct", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "collectionToProduct" {
+            let nav = segue.destination as! ProductViewController
+//            let destinationVC = nav.topViewController as! ProductViewController
+            nav.product = self.product
+        }
+    }
 }

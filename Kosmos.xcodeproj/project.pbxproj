@@ -21,6 +21,12 @@
 		94D19C521E975B16009B2119 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */; };
 		94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D721571EA01D9600DDFC4D /* TabBarViewController.swift */; };
 		AA14FA311EB201CE00DEBB34 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */; };
+		AA9818521EDEA35D005121E0 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9818511EDEA35D005121E0 /* PageViewController.swift */; };
+		AA9818541EDEA9FE005121E0 /* OnFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9818531EDEA9FE005121E0 /* OnFiveViewController.swift */; };
+		AA9818561EDEACED005121E0 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9818551EDEACED005121E0 /* NewUserViewController.swift */; };
+		AA9818581EDEE0DC005121E0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9818571EDEE0DC005121E0 /* ExploreViewController.swift */; };
+		AA98185A1EDF0C86005121E0 /* Date+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9818591EDF0C86005121E0 /* Date+Count.swift */; };
+		AA98185D1EDF10B6005121E0 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA98185C1EDF10B6005121E0 /* ProductViewController.swift */; };
 		AAA8982F1EA9CAE000C6B4A0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */; };
 		AAB638BA1EDE44EA00F841D1 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB638B91EDE44EA00F841D1 /* ProductItem.swift */; };
 		AAD1FCF71EBC8FCC004BD8AF /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */; };
@@ -61,6 +67,12 @@
 		94D19C511E975B16009B2119 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		94D721571EA01D9600DDFC4D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		AA14FA301EB201CE00DEBB34 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		AA9818511EDEA35D005121E0 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		AA9818531EDEA9FE005121E0 /* OnFiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnFiveViewController.swift; sourceTree = "<group>"; };
+		AA9818551EDEACED005121E0 /* NewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		AA9818571EDEE0DC005121E0 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		AA9818591EDF0C86005121E0 /* Date+Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Count.swift"; path = "Extensions/Date+Count.swift"; sourceTree = "<group>"; };
+		AA98185C1EDF10B6005121E0 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		AAA8982E1EA9CAE000C6B4A0 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		AAB638B91EDE44EA00F841D1 /* ProductItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
 		AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +163,12 @@
 				AAE221181EB2F34F00D48818 /* ScannerViewController.swift */,
 				AAD1FCF61EBC8FCC004BD8AF /* AddItemViewController.swift */,
 				AAB638B91EDE44EA00F841D1 /* ProductItem.swift */,
+				AA9818511EDEA35D005121E0 /* PageViewController.swift */,
+				AA9818531EDEA9FE005121E0 /* OnFiveViewController.swift */,
+				AA9818551EDEACED005121E0 /* NewUserViewController.swift */,
+				AA9818571EDEE0DC005121E0 /* ExploreViewController.swift */,
+				AA98185B1EDF0C94005121E0 /* Extensions */,
+				AA98185C1EDF10B6005121E0 /* ProductViewController.swift */,
 			);
 			path = Kosmos;
 			sourceTree = "<group>";
@@ -162,6 +180,14 @@
 				94A3E5631E9584ED005727E4 /* Info.plist */,
 			);
 			path = KosmosTests;
+			sourceTree = "<group>";
+		};
+		AA98185B1EDF0C94005121E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA9818591EDF0C86005121E0 /* Date+Count.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,17 +395,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A3E56D1E958721005727E4 /* ProductTableViewCell.swift in Sources */,
+				AA9818521EDEA35D005121E0 /* PageViewController.swift in Sources */,
 				94D19C521E975B16009B2119 /* AnswerTableViewCell.swift in Sources */,
 				AAB638BA1EDE44EA00F841D1 /* ProductItem.swift in Sources */,
 				94D19C501E9759AC009B2119 /* InfoTableViewController.swift in Sources */,
 				94A3E5711E958B9F005727E4 /* Product.swift in Sources */,
 				AAD1FCF71EBC8FCC004BD8AF /* AddItemViewController.swift in Sources */,
+				AA9818581EDEE0DC005121E0 /* ExploreViewController.swift in Sources */,
 				94D721581EA01D9600DDFC4D /* TabBarViewController.swift in Sources */,
 				AAA8982F1EA9CAE000C6B4A0 /* AccountViewController.swift in Sources */,
 				AAE221191EB2F34F00D48818 /* ScannerViewController.swift in Sources */,
+				AA98185A1EDF0C86005121E0 /* Date+Count.swift in Sources */,
 				AA14FA311EB201CE00DEBB34 /* ScrollViewController.swift in Sources */,
 				9425F3DC1EDD1E6500AC998E /* Faq.swift in Sources */,
 				94A3E56F1E958B2E005727E4 /* ProductTableViewController.swift in Sources */,
+				AA9818541EDEA9FE005121E0 /* OnFiveViewController.swift in Sources */,
+				AA98185D1EDF10B6005121E0 /* ProductViewController.swift in Sources */,
+				AA9818561EDEACED005121E0 /* NewUserViewController.swift in Sources */,
 				94A3E54D1E9584ED005727E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

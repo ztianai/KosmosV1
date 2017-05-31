@@ -13,8 +13,9 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     
-    let allergies = ["formaldehyde", "phenoxyethanol", "amidoamine"]
+    var allergies = [String]()
     
     @IBOutlet weak var allergyTableView: UITableView!
     override func viewDidLoad() {
@@ -26,6 +27,7 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
         
         allergyTableView.delegate = self
         allergyTableView.dataSource = self
+        allergyTableView.allowsSelection = false
         circleImage()
     }
     
@@ -36,6 +38,9 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath as IndexPath)
         cell.textLabel?.text = allergies[indexPath.item]
+        cell.preservesSuperviewLayoutMargins = false
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
         return cell
     }
 
@@ -44,7 +49,6 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
         self.profileImageView.contentMode = .scaleAspectFit
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.height/2
         self.profileImageView.clipsToBounds = true
-//        profileImageView.layer.masksToBounds = false
     }
     
     func takePhoto() {
@@ -105,6 +109,16 @@ class AccountViewController: UIViewController, UINavigationControllerDelegate, U
     func loadDefaults() {
         let defaults = UserDefaults.standard
         nameLabel.text = defaults.object(forKey: "userName") as? String
+        if defaults.object(forKey: "profilePic") != nil {
+            let retrievedImage = defaults.object(forKey: "profilePic") as AnyObject
+            profileImageView.image = UIImage(data: (retrievedImage as! NSData) as Data)
+        }
+        nameLabel.text = defaults.object(forKey: "name") as? String
+        ageLabel.text = defaults.object(forKey: "age") as? String
+        let ingredientList = defaults.object(forKey: "allergies") as? [String]
+        for ingredient in ingredientList! {
+            allergies.append(ingredient)
+        }
     }
     
     @IBAction func touchSettings(_ sender: Any) {

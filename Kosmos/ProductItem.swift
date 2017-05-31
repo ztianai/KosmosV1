@@ -16,13 +16,15 @@ class ProductItem: NSObject, NSCoding {
     var brand: String
     var type: String
     var ingredients = [String]()
+    var eDate: String
     
-    init(barcode: String, name: String, brand: String, type: String, ingredients: [String]) {
+    init(barcode: String, name: String, brand: String, type: String, ingredients: [String], eDate: String) {
         self.name = name
         self.brand = brand
         self.barcode = barcode
         self.type = type
         self.ingredients = ingredients
+        self.eDate = eDate
     }
     
     required convenience init(coder aDecoder: NSCoder) {
@@ -31,7 +33,8 @@ class ProductItem: NSObject, NSCoding {
         let brand = aDecoder.decodeObject(forKey: "brand") as! String
         let type = aDecoder.decodeObject(forKey: "type") as! String
         let ingredients = aDecoder.decodeObject(forKey: "ingredients") as! [String]
-        self.init(barcode: barcode, name: name, brand: brand, type: type, ingredients: ingredients)
+        let eDate = aDecoder.decodeObject(forKey: "eDate") as! String
+        self.init(barcode: barcode, name: name, brand: brand, type: type, ingredients: ingredients, eDate: eDate)
     }
     
     func encode(with aCoder: NSCoder){
@@ -40,5 +43,6 @@ class ProductItem: NSObject, NSCoding {
         aCoder.encode(brand, forKey: "brand")
         aCoder.encode(type, forKey: "type")
         aCoder.encode(ingredients, forKey: "ingredients")
+        aCoder.encode(eDate, forKey: "eDate")
     }
 }
